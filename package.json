@@ -1,0 +1,16 @@
+{
+  "name": "coursesapi",
+  "version": "1.0.0",
+  "description": "A RESTful API of University of Rajshahi about Courses.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "restful",
+    "API"
+  ],
+  "author": "Group6",
+  "license": "ISC"
+}
