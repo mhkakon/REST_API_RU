@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 const http = require('http');
 const app = require('./app');
 
