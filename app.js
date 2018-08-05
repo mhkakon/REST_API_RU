@@ -2,11 +2,8 @@
 
 const express = require('express');
 const app = express();
+const course_detailsRoutes = require('.api/routes/course_details');
 
-app.use((req, res, next) => {
-    res.status(200).json({
-        message: 'Congratulations Group Six Your API starts working!'
-    });
-});
+app.use('/course_details', courseRoutes);
 
 module.exports = app;
