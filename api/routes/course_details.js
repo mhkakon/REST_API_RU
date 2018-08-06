@@ -228,6 +228,32 @@ router.delete('/:department_name', (req, res, next) => {
         });
 });
 
+router.delete('/:department_name/:year', (req, res, next) => {
+    Course.remove({department_name: req.params.department_name, year: req.params.year})
+        .exec()
+        .then(result => {
+            res.status(200).json(result);
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json({error: err});
+        });
+});
 
+router.delete('/:department_name/:year/:course_code', (req, res, next) => {
+    const dName = req.params.department_name;
+    const year = req.params.year;
+    const course_code = req.params.course_code;
+
+    Course.remove({department_name: dName, year: year, course_code: course_code})
+        .exec()
+        .then(result => {
+            res.status(200).json(result);
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json({error: err});
+        });
+});
 
 module.exports = router;
