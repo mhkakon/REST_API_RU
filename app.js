@@ -4,8 +4,14 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 
 const courseRoutes = require('./api/routes/course_details');
+
+mongoose.connect('mongodb+srv://dragon-twister:' + process.env.MONGO_ATLAS_PASS +
+                '@dragon-twister-hfmoi.mongodb.net/test?retryWrites=true', {
+                    useNewUrlParser: true
+                });
 
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
