@@ -9,6 +9,17 @@ const Course = require('../models/course_details');
 router.post('/:department_name/:year', (req, res, next) => {
     const dName = req.params.department_name;
     const year = req.params.year;
+    
+    /*Course.find({department_name: dName, year: year,
+        $or: [{course_code: req.body.code}, {course_name: req.body.name}]})
+        .exec()
+        .then(result => {
+            if(result.length){
+                return{
+                    message: 'Course already exist!'
+                }
+            }
+        })*/
 
     const course = new Course({
         _id: new mongoose.Types.ObjectId(),
