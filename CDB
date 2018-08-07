@@ -1,0 +1,218 @@
+localhost:3000/course_details/CSE/year
+
+{
+    "code" : "ENG1111",
+    "name" : "TECHNICAL & COMMUNICATIVE ENGLISH",
+    "credit": "2",
+    "details": "Grammer, Vocabulary, Spoken ENglish, Reading, Technical Writing, professional Communication"
+
+}
+
+{
+    "code" : "MATH1111",
+    "name" : "ALGEBRA, TRIGONOMETRY & VECTOR",
+    "credit": "3",
+    "details": "Algebra of Sets, Theory of Equations, De Moiver Theorem"
+
+}
+
+{
+    "code" : "CHEM1111",
+    "name" : "APEE1131",
+    "credit": "3",
+    "details": "Electro chemistry, electro force, fluid"
+
+}
+
+{
+    "code" : "APEE1132",
+    "name" : "ELECTRICAL CIRCUIT & ELECTRONICS",
+    "credit": "3",
+    "details": "circuit design etc"
+
+}
+
+{
+    "code" : "CSE1112",
+    "name" : "COMPUTER FUNDAMENTAL",
+    "credit": "3",
+    "details": "ROM RAM PROCESSOR I/O etc"
+
+}
+
+{
+    "code" : "CSE1121",
+    "name" : "COMPUTER PROGRAMMING WITH C",
+    "credit": "3",
+    "details": "COMPUTER PROGRAMMING WITH C"
+
+{
+    "code" : "ECON1211",
+    "name" : "ECONOMICS",
+    "credit": "2",
+    "details": "ECONOMICS"
+
+}
+
+{
+    "code" : "STAT1211",
+    "name" : "STATISTICS FOR ENGINEENER",
+    "credit": "2",
+    "details": "STATISTICS FOR ENGINEENER"
+
+}
+
+{
+    "code" : "MATH1211",
+    "name" : "DIFFERENTIAL AND INTIGRAL CACLCULUS",
+    "credit": "3",
+    "details": "DIFFERENTIAL AND INTIGRAL CACLCULUS"
+
+}
+
+{
+    "code" : "PHY1221",
+    "name" : "APPLIED ELECTRICITY AND MAGNETISM",
+    "credit": "3",
+    "details": "all detalils"
+
+}
+
+{
+    "code" : "CSE1221",
+    "name" : "OOP WITH C++",
+    "credit": "3",
+    "details": "DIFFERENTIAL AND INTIGRAL CACLCULUS"
+
+}
+
+{
+    "code" : "ACCO2111",
+    "name" : "INDUSTRIAL MANAGEMENT AND ACCOUNTANCY",
+    "credit": "2",
+    "details": "INDUSTRIAL MANAGEMENT AND ACCOUNTANCY"
+
+}
+
+{
+    "code" : "STAT2111",
+    "name" : "THEOREY OF STATISTICS",
+    "credit": "2",
+    "details": "THEOREY OF STATISTICS"
+
+}
+
+{
+    "code" : "MATH2111",
+    "name" : "MATRIXES AND DIFFERENTIAL EQUATIONS",
+    "credit": "3",
+    "details": "MATRIXES AND DIFFERENTIAL EQUATIONS"
+
+}
+
+{
+    "code" : "CSE2111",
+    "name" : "DIGITAL SYSTEM DESIGN",
+    "credit": "3",
+    "details": "DIGITAL SYSTEM DESIGN"
+
+}
+
+{
+    "code" : "CSE2121",
+    "name" : "DATA STRUCTURE",
+    "credit": "3",
+    "details": "DATA STRUCTURE"
+
+}
+
+{
+    "code" : "CSE2131",
+    "name" : "DISCRETE MATHEMATICS",
+    "credit": "3",
+    "details": "DISCRETE"
+
+}
+
+{
+    "code" : "LAW2211",
+    "name" : "CYBER AND INTELLECTUAL PROPERTY LAW ",
+    "credit": "2",
+    "details": "CYBER AND INTELLECTUAL PROPERTY LAW"
+
+}
+
+{
+    "code" : "MATH2231",
+    "name" : "NUMERICAL METHODS",
+    "credit": "3",
+    "details": "NUMERICAL METHODS"
+
+}
+
+{
+    "code" : "MAT2241",
+    "name" : "LINEAR ALGEBRA",
+    "credit": "3",
+    "details": "LINEAR ALGEBRA"
+
+}
+
+{
+    "code" : "CSE2211",
+    "name" : "OOP AND DESIGN METHOD",
+    "credit": "3",
+    "details": "OOP AND DESIGN METHOD"
+
+}
+
+{
+    "code" : "CSE2221",
+    "name" : "DESIGN AND ANALYSIS OF ALGORITHMS",
+    "credit": "3",
+    "details": "DESIGN AND ANALYSIS OF ALGORITHMS"
+
+}
+
+{
+    "code" : "CSE3111",
+    "name" : "SOFTWERE ENGINEERING",
+    "credit": "3",
+    "details": "SOFTWERE ENGINEERING"
+
+}
+
+{
+    "code" : "CSE3121",
+    "name" : "DATABASE MANAGEMENT SYSTEM",
+    "credit": "3",
+    "details": "DATABASE MANAGEMENT SYSTEM"
+
+}
+
+{
+    "code" : "CSE3131",
+    "name" : "DIGITAL SIGNAL PROCESSING",
+    "credit": "3",
+    "details": "DIGITAL SIGNAL PROCESSING"
+
+}
+
+{
+    "code" : "CSE3141",
+    "name" : "COMPILER DESIGN",
+    "credit": "3",
+    "details": "COMPILER DESIGN"
+
+}
+
+{
+    "code" : "CSE3151",
+    "name" : "COMPUTER NETWORK",
+    "credit": "3",
+    "details": "COMPUTER NETWORK"
+
+}
+
+
+}

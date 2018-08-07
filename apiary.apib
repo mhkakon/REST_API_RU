@@ -1,0 +1,846 @@
+FORMAT: 1A
+HOST: localhost:3000/course_details/
+
+# RUCourseAPIDocumentation
+
+RUCourseAPI is a RESTful API from which you can get all the course details about any department. 
+By this API user can PUT information to the database, user can edit information to the database, user can delete information to the database and user can get information by putting course code or department name from the database.
+For this project we use  MongoDB Cloud Manager for the database here.
+## Questions Collection [/]
+
+### GetDataInformation [GET]
+You can get your own data using this action. It takes a JSON object containing a question and a collection of answers in the form of choices
+
++ Response 200 (application/json)
+
+        [
+            {
+                "count": 55,
+                 "courses": [
+        {
+            "_id": "5b6991c9380d0702b81836df",
+            "department_name": "CSE",
+            "year": 3,
+            "course_code": "CSE2311",
+            "course_name": "Fuck him all",
+            "course_credit": 19,
+            "course_details": "Fuck Suck Push",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b6991c9380d0702b81836df"
+            }
+        },
+        {
+            "_id": "5b6991d1380d0702b81836e0",
+            "department_name": "CSE",
+            "year": 3,
+            "course_code": "CSE2311",
+            "course_name": "Fuck him all",
+            "course_credit": 19,
+            "course_details": "Fuck Suck Push",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b6991d1380d0702b81836e0"
+            }
+        },
+        {
+            "_id": "5b69b93a380d0702b81836e1",
+            "department_name": "CSE",
+            "year": 2,
+            "course_code": "ENG1111",
+            "course_name": "TECHNICAL & COMMUNICATIVE ENGLISH",
+            "course_credit": 2,
+            "course_details": "Grammer, Vocabulary, Spoken ENglish, Reading, Technical Writing, professional Communication",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69b93a380d0702b81836e1"
+            }
+        },
+        {
+            "_id": "5b69b97d380d0702b81836e2",
+            "department_name": "CSE",
+            "year": 3,
+            "course_code": "MATH1111",
+            "course_name": "ALGEBRA, TRIGONOMETRY & VECTOR",
+            "course_credit": 3,
+            "course_details": "Algebra of Sets, Theory of Equations, De Moiver Theorem",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69b97d380d0702b81836e2"
+            }
+        },
+        {
+            "_id": "5b69b99b380d0702b81836e3",
+            "department_name": "CSE",
+            "year": 1,
+            "course_code": "CHEM1111",
+            "course_name": "APEE1131",
+            "course_credit": 3,
+            "course_details": "Electro chemistry, electro force, fluid",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69b99b380d0702b81836e3"
+            }
+        },
+        {
+            "_id": "5b69b9b0380d0702b81836e4",
+            "department_name": "CSE",
+            "year": 1,
+            "course_code": "APEE1132",
+            "course_name": "ELECTRICAL CIRCUIT & ELECTRONICS",
+            "course_credit": 3,
+            "course_details": "circuit design etc",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69b9b0380d0702b81836e4"
+            }
+        },
+        {
+            "_id": "5b69b9bc380d0702b81836e5",
+            "department_name": "CSE",
+            "year": 1,
+            "course_code": "CSE1112",
+            "course_name": "COMPUTER FUNDAMENTAL",
+            "course_credit": 3,
+            "course_details": "ROM RAM PROCESSOR I/O etc",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69b9bc380d0702b81836e5"
+            }
+        },
+        {
+            "_id": "5b69b9d4380d0702b81836e6",
+            "department_name": "CSE",
+            "year": 1,
+            "course_code": "CSE1121",
+            "course_name": "COMPUTER PROGRAMMING WITH C",
+            "course_credit": 3,
+            "course_details": "COMPUTER PROGRAMMING WITH C",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69b9d4380d0702b81836e6"
+            }
+        },
+        {
+            "_id": "5b69b9e4380d0702b81836e7",
+            "department_name": "CSE",
+            "year": 1,
+            "course_code": "ECON1211",
+            "course_name": "ECONOMICS",
+            "course_credit": 2,
+            "course_details": "ECONOMICS",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69b9e4380d0702b81836e7"
+            }
+        },
+        {
+            "_id": "5b69b9f2380d0702b81836e8",
+            "department_name": "CSE",
+            "year": 2,
+            "course_code": "STAT1211",
+            "course_name": "STATISTICS FOR ENGINEENER",
+            "course_credit": 2,
+            "course_details": "STATISTICS FOR ENGINEENER",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69b9f2380d0702b81836e8"
+            }
+        },
+        {
+            "_id": "5b69b9fd380d0702b81836e9",
+            "department_name": "CSE",
+            "year": 2,
+            "course_code": "MATH1211",
+            "course_name": "DIFFERENTIAL AND INTIGRAL CACLCULUS",
+            "course_credit": 3,
+            "course_details": "DIFFERENTIAL AND INTIGRAL CACLCULUS",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69b9fd380d0702b81836e9"
+            }
+        },
+        {
+            "_id": "5b69ba09380d0702b81836ea",
+            "department_name": "CSE",
+            "year": 2,
+            "course_code": "PHY1221",
+            "course_name": "APPLIED ELECTRICITY AND MAGNETISM",
+            "course_credit": 3,
+            "course_details": "all detalils",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69ba09380d0702b81836ea"
+            }
+        },
+        {
+            "_id": "5b69ba16380d0702b81836eb",
+            "department_name": "CSE",
+            "year": 2,
+            "course_code": "CSE1221",
+            "course_name": "OOP WITH C++",
+            "course_credit": 3,
+            "course_details": "DIFFERENTIAL AND INTIGRAL CACLCULUS",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69ba16380d0702b81836eb"
+            }
+        },
+        {
+            "_id": "5b69ba20380d0702b81836ec",
+            "department_name": "CSE",
+            "year": 2,
+            "course_code": "ACCO2111",
+            "course_name": "INDUSTRIAL MANAGEMENT AND ACCOUNTANCY",
+            "course_credit": 2,
+            "course_details": "INDUSTRIAL MANAGEMENT AND ACCOUNTANCY",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69ba20380d0702b81836ec"
+            }
+        },
+        {
+            "_id": "5b69ba2b380d0702b81836ed",
+            "department_name": "CSE",
+            "year": 2,
+            "course_code": "STAT2111",
+            "course_name": "THEOREY OF STATISTICS",
+            "course_credit": 2,
+            "course_details": "THEOREY OF STATISTICS",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69ba2b380d0702b81836ed"
+            }
+        },
+        {
+            "_id": "5b69ba36380d0702b81836ee",
+            "department_name": "CSE",
+            "year": 2,
+            "course_code": "MATH2111",
+            "course_name": "MATRIXES AND DIFFERENTIAL EQUATIONS",
+            "course_credit": 3,
+            "course_details": "MATRIXES AND DIFFERENTIAL EQUATIONS",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69ba36380d0702b81836ee"
+            }
+        },
+        {
+            "_id": "5b69ba49380d0702b81836ef",
+            "department_name": "CSE",
+            "year": 3,
+            "course_code": "CSE2111",
+            "course_name": "DIGITAL SYSTEM DESIGN",
+            "course_credit": 3,
+            "course_details": "DIGITAL SYSTEM DESIGN",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69ba49380d0702b81836ef"
+            }
+        },
+        {
+            "_id": "5b69ba53380d0702b81836f0",
+            "department_name": "CSE",
+            "year": 3,
+            "course_code": "CSE3151",
+            "course_name": "COMPUTER NETWORK",
+            "course_credit": 3,
+            "course_details": "COMPUTER NETWORK",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69ba53380d0702b81836f0"
+            }
+        },
+        {
+            "_id": "5b69ba5b380d0702b81836f1",
+            "department_name": "CSE",
+            "year": 3,
+            "course_code": "CSE3141",
+            "course_name": "COMPILER DESIGN",
+            "course_credit": 3,
+            "course_details": "COMPILER DESIGN",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69ba5b380d0702b81836f1"
+            }
+        },
+        {
+            "_id": "5b69ba64380d0702b81836f2",
+            "department_name": "CSE",
+            "year": 3,
+            "course_code": "CSE3131",
+            "course_name": "DIGITAL SIGNAL PROCESSING",
+            "course_credit": 3,
+            "course_details": "DIGITAL SIGNAL PROCESSING",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69ba64380d0702b81836f2"
+            }
+        },
+        {
+            "_id": "5b69ba6f380d0702b81836f3",
+            "department_name": "CSE",
+            "year": 3,
+            "course_code": "CSE3121",
+            "course_name": "DATABASE MANAGEMENT SYSTEM",
+            "course_credit": 3,
+            "course_details": "DATABASE MANAGEMENT SYSTEM",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69ba6f380d0702b81836f3"
+            }
+        },
+        {
+            "_id": "5b69ba77380d0702b81836f4",
+            "department_name": "CSE",
+            "year": 3,
+            "course_code": "CSE3111",
+            "course_name": "SOFTWERE ENGINEERING",
+            "course_credit": 3,
+            "course_details": "SOFTWERE ENGINEERING",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69ba77380d0702b81836f4"
+            }
+        },
+        {
+            "_id": "5b69ba80380d0702b81836f5",
+            "department_name": "CSE",
+            "year": 3,
+            "course_code": "CSE2221",
+            "course_name": "DESIGN AND ANALYSIS OF ALGORITHMS",
+            "course_credit": 3,
+            "course_details": "DESIGN AND ANALYSIS OF ALGORITHMS",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69ba80380d0702b81836f5"
+            }
+        },
+        {
+            "_id": "5b69ba8a380d0702b81836f6",
+            "department_name": "CSE",
+            "year": 3,
+            "course_code": "CSE2211",
+            "course_name": "OOP AND DESIGN METHOD",
+            "course_credit": 3,
+            "course_details": "OOP AND DESIGN METHOD",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69ba8a380d0702b81836f6"
+            }
+        },
+        {
+            "_id": "5b69bacf380d0702b81836f7",
+            "department_name": "EEE",
+            "year": 1,
+            "course_code": "ENG1111",
+            "course_name": "TECHNICAL & COMMUNICATIVE ENGLISH",
+            "course_credit": 2,
+            "course_details": "Grammer, Vocabulary, Spoken ENglish, Reading, Technical Writing, professional Communication",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69bacf380d0702b81836f7"
+            }
+        },
+        {
+            "_id": "5b69badd380d0702b81836f8",
+            "department_name": "ICE",
+            "year": 1,
+            "course_code": "ENG1111",
+            "course_name": "TECHNICAL & COMMUNICATIVE ENGLISH",
+            "course_credit": 2,
+            "course_details": "Grammer, Vocabulary, Spoken ENglish, Reading, Technical Writing, professional Communication",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69badd380d0702b81836f8"
+            }
+        },
+        {
+            "_id": "5b69baeb380d0702b81836f9",
+            "department_name": "APEE",
+            "year": 1,
+            "course_code": "ENG1111",
+            "course_name": "TECHNICAL & COMMUNICATIVE ENGLISH",
+            "course_credit": 2,
+            "course_details": "Grammer, Vocabulary, Spoken ENglish, Reading, Technical Writing, professional Communication",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69baeb380d0702b81836f9"
+            }
+        },
+        {
+            "_id": "5b69bb1a380d0702b81836fa",
+            "department_name": "EEE",
+            "year": 1,
+            "course_code": "MATH1111",
+            "course_name": "ALGEBRA, TRIGONOMETRY & VECTOR",
+            "course_credit": 3,
+            "course_details": "Algebra of Sets, Theory of Equations, De Moiver Theorem",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69bb1a380d0702b81836fa"
+            }
+        },
+        {
+            "_id": "5b69bb26380d0702b81836fb",
+            "department_name": "ICE",
+            "year": 1,
+            "course_code": "MATH1111",
+            "course_name": "ALGEBRA, TRIGONOMETRY & VECTOR",
+            "course_credit": 3,
+            "course_details": "Algebra of Sets, Theory of Equations, De Moiver Theorem",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69bb26380d0702b81836fb"
+            }
+        },
+        {
+            "_id": "5b69bb3d380d0702b81836fc",
+            "department_name": "APEE",
+            "year": 1,
+            "course_code": "MATH1111",
+            "course_name": "ALGEBRA, TRIGONOMETRY & VECTOR",
+            "course_credit": 3,
+            "course_details": "Algebra of Sets, Theory of Equations, De Moiver Theorem",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69bb3d380d0702b81836fc"
+            }
+        },
+        {
+            "_id": "5b69bb6b380d0702b81836fd",
+            "department_name": "APEE",
+            "year": 1,
+            "course_code": "CHEM1111",
+            "course_name": "APEE1131",
+            "course_credit": 3,
+            "course_details": "Electro chemistry, electro force, fluid",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69bb6b380d0702b81836fd"
+            }
+        },
+        {
+            "_id": "5b69bb72380d0702b81836fe",
+            "department_name": "EEE",
+            "year": 1,
+            "course_code": "CHEM1111",
+            "course_name": "APEE1131",
+            "course_credit": 3,
+            "course_details": "Electro chemistry, electro force, fluid",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69bb72380d0702b81836fe"
+            }
+        },
+        {
+            "_id": "5b69bb7a380d0702b81836ff",
+            "department_name": "ICE",
+            "year": 1,
+            "course_code": "CHEM1111",
+            "course_name": "APEE1131",
+            "course_credit": 3,
+            "course_details": "Electro chemistry, electro force, fluid",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69bb7a380d0702b81836ff"
+            }
+        },
+        {
+            "_id": "5b69c0f5380d0702b8183700",
+            "department_name": "EEE",
+            "year": 1,
+            "course_code": "APEE1132",
+            "course_name": "ELECTRICAL CIRCUIT & ELECTRONICS",
+            "course_credit": 3,
+            "course_details": "circuit design etc",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69c0f5380d0702b8183700"
+            }
+        },
+        {
+            "_id": "5b69c11f380d0702b8183701",
+            "department_name": "EEE",
+            "year": 1,
+            "course_code": "EEE1112",
+            "course_name": "FUNDAMENTAL OF ELECTRONICS",
+            "course_credit": 3,
+            "course_details": "ELECTRONICS DETAILS",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69c11f380d0702b8183701"
+            }
+        },
+        {
+            "_id": "5b69c133380d0702b8183702",
+            "department_name": "EEE",
+            "year": 1,
+            "course_code": "ECON1211",
+            "course_name": "ECONOMICS",
+            "course_credit": 2,
+            "course_details": "ECONOMICS",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69c133380d0702b8183702"
+            }
+        },
+        {
+            "_id": "5b69c13c380d0702b8183703",
+            "department_name": "EEE",
+            "year": 1,
+            "course_code": "STAT1211",
+            "course_name": "STATISTICS FOR ENGINEENER",
+            "course_credit": 2,
+            "course_details": "STATISTICS FOR ENGINEENER",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69c13c380d0702b8183703"
+            }
+        },
+        {
+            "_id": "5b69c145380d0702b8183704",
+            "department_name": "EEE",
+            "year": 1,
+            "course_code": "MATH1211",
+            "course_name": "DIFFERENTIAL AND INTIGRAL CACLCULUS",
+            "course_credit": 3,
+            "course_details": "DIFFERENTIAL AND INTIGRAL CACLCULUS",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69c145380d0702b8183704"
+            }
+        },
+        {
+            "_id": "5b69c14e380d0702b8183705",
+            "department_name": "EEE",
+            "year": 1,
+            "course_code": "PHY1221",
+            "course_name": "APPLIED ELECTRICITY AND MAGNETISM",
+            "course_credit": 3,
+            "course_details": "all detalils",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69c14e380d0702b8183705"
+            }
+        },
+        {
+            "_id": "5b69c162380d0702b8183706",
+            "department_name": "ICE",
+            "year": 1,
+            "course_code": "ENG1111",
+            "course_name": "TECHNICAL & COMMUNICATIVE ENGLISH",
+            "course_credit": 2,
+            "course_details": "Grammer, Vocabulary, Spoken ENglish, Reading, Technical Writing, professional Communication",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69c162380d0702b8183706"
+            }
+        },
+        {
+            "_id": "5b69c16a380d0702b8183707",
+            "department_name": "ICE",
+            "year": 1,
+            "course_code": "MATH1111",
+            "course_name": "ALGEBRA, TRIGONOMETRY & VECTOR",
+            "course_credit": 3,
+            "course_details": "Algebra of Sets, Theory of Equations, De Moiver Theorem",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69c16a380d0702b8183707"
+            }
+        },
+        {
+            "_id": "5b69c174380d0702b8183708",
+            "department_name": "ICE",
+            "year": 1,
+            "course_code": "CHEM1111",
+            "course_name": "APEE1131",
+            "course_credit": 3,
+            "course_details": "Electro chemistry, electro force, fluid",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69c174380d0702b8183708"
+            }
+        },
+        {
+            "_id": "5b69c17d380d0702b8183709",
+            "department_name": "ICE",
+            "year": 1,
+            "course_code": "APEE1132",
+            "course_name": "ELECTRICAL CIRCUIT & ELECTRONICS",
+            "course_credit": 3,
+            "course_details": "circuit design etc",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69c17d380d0702b8183709"
+            }
+        },
+        {
+            "_id": "5b69c18c380d0702b818370a",
+            "department_name": "ICE",
+            "year": 1,
+            "course_code": "ECON1211",
+            "course_name": "ECONOMICS",
+            "course_credit": 2,
+            "course_details": "ECONOMICS",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69c18c380d0702b818370a"
+            }
+        },
+        {
+            "_id": "5b69c193380d0702b818370b",
+            "department_name": "ICE",
+            "year": 1,
+            "course_code": "STAT1211",
+            "course_name": "STATISTICS FOR ENGINEENER",
+            "course_credit": 2,
+            "course_details": "STATISTICS FOR ENGINEENER",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69c193380d0702b818370b"
+            }
+        },
+        {
+            "_id": "5b69c1ac380d0702b818370c",
+            "department_name": "ICE",
+            "year": 1,
+            "course_code": "MATH1211",
+            "course_name": "DIFFERENTIAL AND INTIGRAL CACLCULUS",
+            "course_credit": 3,
+            "course_details": "DIFFERENTIAL AND INTIGRAL CACLCULUS",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69c1ac380d0702b818370c"
+            }
+        },
+        {
+            "_id": "5b69c1b5380d0702b818370d",
+            "department_name": "ICE",
+            "year": 1,
+            "course_code": "PHY1221",
+            "course_name": "APPLIED ELECTRICITY AND MAGNETISM",
+            "course_credit": 3,
+            "course_details": "all detalils",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69c1b5380d0702b818370d"
+            }
+        },
+        {
+            "_id": "5b69c1cf380d0702b818370e",
+            "department_name": "APEE",
+            "year": 1,
+            "course_code": "ENG1111",
+            "course_name": "TECHNICAL & COMMUNICATIVE ENGLISH",
+            "course_credit": 2,
+            "course_details": "Grammer, Vocabulary, Spoken ENglish, Reading, Technical Writing, professional Communication",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69c1cf380d0702b818370e"
+            }
+        },
+        {
+            "_id": "5b69c1d7380d0702b818370f",
+            "department_name": "APEE",
+            "year": 1,
+            "course_code": "MATH1111",
+            "course_name": "ALGEBRA, TRIGONOMETRY & VECTOR",
+            "course_credit": 3,
+            "course_details": "Algebra of Sets, Theory of Equations, De Moiver Theorem",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69c1d7380d0702b818370f"
+            }
+        },
+        {
+            "_id": "5b69c1df380d0702b8183710",
+            "department_name": "APEE",
+            "year": 1,
+            "course_code": "CHEM1111",
+            "course_name": "APEE1131",
+            "course_credit": 3,
+            "course_details": "Electro chemistry, electro force, fluid",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69c1df380d0702b8183710"
+            }
+        },
+        {
+            "_id": "5b69c1e7380d0702b8183711",
+            "department_name": "APEE",
+            "year": 1,
+            "course_code": "APEE1132",
+            "course_name": "ELECTRICAL CIRCUIT & ELECTRONICS",
+            "course_credit": 3,
+            "course_details": "circuit design etc",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69c1e7380d0702b8183711"
+            }
+        },
+        {
+            "_id": "5b69c1f1380d0702b8183712",
+            "department_name": "APEE",
+            "year": 1,
+            "course_code": "ECON1211",
+            "course_name": "ECONOMICS",
+            "course_credit": 2,
+            "course_details": "ECONOMICS",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69c1f1380d0702b8183712"
+            }
+        },
+        {
+            "_id": "5b69c1fa380d0702b8183713",
+            "department_name": "APEE",
+            "year": 1,
+            "course_code": "STAT1211",
+            "course_name": "STATISTICS FOR ENGINEENER",
+            "course_credit": 2,
+            "course_details": "STATISTICS FOR ENGINEENER",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69c1fa380d0702b8183713"
+            }
+        },
+        {
+            "_id": "5b69c204380d0702b8183714",
+            "department_name": "APEE",
+            "year": 1,
+            "course_code": "MATH1211",
+            "course_name": "DIFFERENTIAL AND INTIGRAL CACLCULUS",
+            "course_credit": 3,
+            "course_details": "DIFFERENTIAL AND INTIGRAL CACLCULUS",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69c204380d0702b8183714"
+            }
+        },
+        {
+            "_id": "5b69c20d380d0702b8183715",
+            "department_name": "APEE",
+            "year": 1,
+            "course_code": "PHY1221",
+            "course_name": "APPLIED ELECTRICITY AND MAGNETISM",
+            "course_credit": 3,
+            "course_details": "all detalils",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69c20d380d0702b8183715"
+            }
+        }
+            ]
+        }
+       ]
+        
+        
+        
+### GetSpecificDataInformation [GET/APEE/1/PHY1221]
+You can get your own data using this action. It takes a JSON
+object containing a question and a collection of answers in the
+form of choices.
+
++ Response 200 (application/json)
+
+        [
+           {
+            "count": 1,
+            "courses": [
+        {
+            "_id": "5b69c20d380d0702b8183715",
+            "department_name": "APEE",
+            "year": 1,
+            "course_code": "PHY1221",
+            "course_name": "APPLIED ELECTRICITY AND MAGNETISM",
+            "course_credit": 3,
+            "course_details": "all detalils",
+            "request": {
+                "type": "GET",
+                "url": "http://localhost/3000/course_details/5b69c20d380d0702b8183715"
+            }
+        }
+    ]
+}
+        ]
+
+### PostData [POST/CSE/2]
+
+You may post your own data using this action. It takes a JSON
+object containing a question and a collection of answers in the
+form of choices.
+
++ Request (application/json)
+
+        {
+            "code" : "PHY1221",
+            "name" : "APPLIED ELECTRICITY AND MAGNETISM",
+            "credit": "3",
+            "details": "all detalils"
+
+}
+
++ Response 201 (application/json)
+
+    + Headers
+
+            Location: /course_details/CSE/2
+
+    + Body
+           {
+            "message": "Created course successfully!",
+            "createdCourse": {
+                "_id": "5b69c737380d0702b8183716",
+                 "department_name": "CSE",
+                "year": 2,
+                "course_code": "PHY1221",
+                 "course_name": "APPLIED ELECTRICITY AND MAGNETISM",
+                 "course_credit": 3,
+                "details": "all detalils",
+                 "request": {
+                    "type": "GET",
+                    "url": "http://localhost/3000/course_details/5b69c737380d0702b8183716"
+            }
+    }
+}
+            
+            
+###UpdateDataInformation [PATCH]
+
+You can update your own question using this action.
+
++ Request (application/json)
+
+        {
+            "code"   : "value",
+            "name"   : "value",
+            "credit" : "value",
+            "details": "Details of the Course"
+        }
+
++ Response 201 (application/json)
+
+    + Headers
+
+            Location: /course_details/CSE
+
+    + Body
+
+            {
+            }
+            
+          
+          
+###DELETEdata [DELETE]
+You can delete data from the database using this action.
++ Response 200 (application/json)
+
+[
+ {
+    "OHH": {
+        "message": "Not found!"
+    }
+}
+]
